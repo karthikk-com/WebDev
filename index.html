@@ -314,6 +314,53 @@
       </div>
     </section>
 
+    <!--Contact Form-->
+    <!--form-control, form-label,form-select, input-group, input-group-text-->
+
+    <section class="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2 class="text-capitalize">Get In touch</h2>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form >
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope-paper"></i></span>
+                <input type="email" id="email" class="form-control" placeholder="e.g. kart@karthikk.com" required>
+              </div>
+
+              <div class="input-group mt-3">
+                <span class="input-group-text"><i class="bi bi-person-bounding-box"></i></span>
+                <input type="name" class="form-control" id="name" placeholder="e.g. kart" required>
+              </div>
+
+              <div class="input-group mt-3">
+                <span class="input-group-text"><i class="bi bi-question-square"></i></span>
+              <select id="subject" class="form-select text-muted">
+                <option value="pricing" selected>Pricing Query</option>
+                <option value="content">Content Query</option>
+                <option value="other">Other Query</option>
+              </select>
+            </div>
+              
+              <div class="form-floating mb-4 mt-3">
+                <textarea id="floatingTextarea" style="height: 150px;" placeholder="Leave a comment here" class="form-control" required></textarea>
+                <label for="floatingTextarea" class="text-muted">Your query</label>
+              </div>
+
+              <div class="mb-4 text-center">
+                <button class="btn btn-secondary" type="submit">Submit</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Bootstrap JS Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
