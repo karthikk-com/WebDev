@@ -21,8 +21,8 @@
   <body>
     <!--Nav bar-->
 
-    <nav class="navbar navbar-expand-md navbar-light">
-      <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light ">
+      <div class="container mt-3">
 
         <!--Brand Logo-->
         <a href="#intro" class="navbar-brand">
@@ -60,7 +60,10 @@
           </h1>
 
           <p class="my-4 text-muted lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-          <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+          <div >
+            <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+            <a href="#sidebar" class="btn btn-outline-secondary btn-lg" data-bs-toggle="offcanvas" aria-controls="sidebar">Explore More</a>
+          </div>
         </div>
 
         <div class="col-md-5 text-center">
@@ -72,6 +75,18 @@
       </div>
     </div>      
     </section>
+
+    <!--Side Bar-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="sidebar-label" id="sidebar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-label">My Other Books  <i class="bi bi-book-half"></i></h5>
+        <button class="btn-close me-1" type="button" pe-3 data-bs-dismiss="offcanvas" aira-label="close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, ipsa vero architecto minima quod odio sit provident non maxime velit excepturi consequuntur dolorum cupiditate voluptatibus beatae. Consequatur reiciendis repellat libero ducimus dicta suscipit, cumque ut harum consectetur soluta amet sunt nulla! Unde, voluptate incidunt quo modi ipsa praesentium molestiae officiis.</p>
+      </div>
+    </div>
 
     <!--Pricing Plans-->
     <section id="pricing" class="mt-5 bg-light">
